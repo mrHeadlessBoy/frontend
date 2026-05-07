@@ -3,7 +3,7 @@ import { LayoutDashboard, BookOpen, PenTool, /* Settings */ LogOut, Search, Plus
 
 const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('articles');
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState<any[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingId, setEditingId] = useState<number | null>(null);
   
