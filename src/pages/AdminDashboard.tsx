@@ -16,7 +16,7 @@ const AdminDashboard = () => {
 
   const fetchArticles = async () => {
     try {
-      const res = await fetch('http://localhost:3000/v1/api/articles');
+      const res = await fetch('https://oraclemind.onrender.com/v1/api/articles');
       const data = await res.json();
       setArticles(Array.isArray(data) ? data : []);
     } catch (err) {
@@ -45,7 +45,7 @@ const AdminDashboard = () => {
   const handleDelete = async (id: number) => {
     if (!confirm("Are you sure you want to strike this from the archives?")) return;
     try {
-      await fetch(`http://localhost:3000/v1/api/articles/${id}`, { method: 'DELETE' });
+      await fetch(`https://oraclemind.onrender.com/v1/api/articles/${id}`, { method: 'DELETE' });
       fetchArticles();
     } catch (err) {
       console.error("Delete failed:", err);
@@ -56,8 +56,8 @@ const AdminDashboard = () => {
     e.preventDefault();
     const isEditing = editingId !== null;
     const url = isEditing 
-      ? `http://localhost:3000/v1/api/articles/${editingId}` 
-      : `http://localhost:3000/v1/api/articles`;
+      ? `https://oraclemind.onrender.com/v1/api/articles/${editingId}` 
+      : `https://oraclemind.onrender.com/v1/api/articles`;
     const method = isEditing ? 'PATCH' : 'POST';
 
     try {

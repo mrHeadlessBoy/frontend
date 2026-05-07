@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3000/v1/api/articles')
+    fetch('https://oraclemind.onrender.com/v1/api/articles')
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);
