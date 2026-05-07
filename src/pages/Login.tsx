@@ -12,7 +12,7 @@ const handleLogin = async (e: React.FormEvent) => {
   setLoading(true);
 
   try {
-    const response = await fetch('http://localhost:3000/v1/api/login', {
+    const response = await fetch('https://oraclemind.onrender.com/v1/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
