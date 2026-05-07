@@ -1,0 +1,9 @@
+/* body {
+  background-color: #000000;
+  color: #ffffff;
+}
+ */
+/* Red highlights for active states or buttons */
+.btn-primary {
+  @apply bg-app-red text-white px-4 py-2 font-bold hover:bg-white hover:text-black transition-all;
+}

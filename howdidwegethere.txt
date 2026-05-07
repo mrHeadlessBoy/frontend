@@ -1,0 +1,5 @@
+day-1
+I have problem with login to psql database fix with .conf in programfile
+and I have problem with how to start making the web cause I forgot almost all of my being
+
+day-2
