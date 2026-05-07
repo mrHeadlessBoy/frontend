@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:5173"], // Your Vite frontend URL
+  origin: ["http://localhost:5173", "https://thearticleoforacle.mrheadlessboy.workers.dev/"], // Your Vite frontend URL
   methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type"]
 }));
